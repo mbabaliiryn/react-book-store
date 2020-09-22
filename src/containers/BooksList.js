@@ -19,7 +19,7 @@ const BooksList = ({
 
   return (
     <div>
-    <CategoryFilter handleChange={handleFilterChange} />
+      <CategoryFilter handleChange={handleFilterChange} />
       <table>
         <thead>
           <tr>
@@ -30,9 +30,9 @@ const BooksList = ({
           </tr>
         </thead>
         <tbody>
-        {filteredBooks().map(book => (
-           <Book key={book.id} book={book} handleBookRemove={handleBookRemove} />
-         ))}
+          {filteredBooks().map(book => (
+            <Book key={book.id} book={book} handleBookRemove={handleBookRemove} />
+          ))}
         </tbody>
       </table>
     </div>
