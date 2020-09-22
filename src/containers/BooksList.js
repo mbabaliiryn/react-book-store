@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 
 import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
-import { handleBookRemove, changeFilter } from '../actions';
+import { removeBook, changeFilter } from '../actions';
 import '../App.css';
 
 const BooksList = ({
-  books, handleBookRemove, changeFilter, filter,
+  books, removeBook, changeFilter, filter,
 }) => {
   const handleFilterChange = e => {
     const { value } = e.target;
@@ -31,7 +31,7 @@ const BooksList = ({
         </thead>
         <tbody>
           {filteredBooks().map(book => (
-            <Book key={book.id} book={book} handleBookRemove={handleBookRemove} />
+            <Book key={book.id} book={book} removeBook={removeBook} />
           ))}
         </tbody>
       </table>
@@ -50,4 +50,4 @@ const mapStateToProps = state => ({
   books: state.books,
   filter: state.filter,
 });
-export default connect(mapStateToProps, { handleBookRemove, changeFilter })(BooksList);
+export default connect(mapStateToProps, { removeBook, changeFilter })(BooksList);
