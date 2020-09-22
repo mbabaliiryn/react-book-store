@@ -38,23 +38,31 @@
   }
 }
 
+.main-container {
+  height: 16vh;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+select {
+  border: none;
+  margin-top: 2em;
+}
+
+.image-container {
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
 /* body {
   margin: 0;
   padding: 0;
-  background-color:  lightslategray;
-}
-
-tbody > tr {
-  border: 2px solid blue;
-  background-color: blue;
-  height: 20vh;
-  align-items: center;
-}
-
-table {
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #F5F6FA;
 } */
 
-
+.table-row {
+  height: 20vh;
+}

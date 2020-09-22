@@ -7,6 +7,9 @@ import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
 import { handleBookRemove, changeFilter } from '../actions';
 import '../App.css';
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const BooksList = ({
   books, handleBookRemove, changeFilter, filter,
@@ -19,22 +22,25 @@ const BooksList = ({
   const filteredBooks = () => (filter === 'ALL' ? books : books.filter(book => book.category === filter));
 
   return (
-    <div>
-      <CategoryFilter handleChange={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredBooks().map(book => (
-            <Book key={book.id} book={book} handleBookRemove={handleBookRemove} />
-          ))}
-        </tbody>
-      </table>
+    <div className="main w-75 m-auto border bg-light shadow-lg">
+      <div className="main-container card border-bottom ">
+        <div className="d-flex justify-content-between p-4 text-primary">
+          <div className="title"> Bookstore</div>
+          <CategoryFilter handleChange={handleFilterChange} />
+          <div className="image-container">
+          <FontAwesomeIcon icon={faUser} />
+          </div>
+        </div>
+      </div>
+      {
+      filteredBooks().map(book => (
+        <Book
+          key={book.id}
+          book={book}
+          handleBookRemove={handleBookRemove}
+        />
+      ))
+}
     </div>
   );
 };
