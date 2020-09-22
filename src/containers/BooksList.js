@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
 import { handleBookRemove, changeFilter } from '../actions';
+import '../App.css';
 
 const BooksList = ({
   books, handleBookRemove, changeFilter, filter,
@@ -23,7 +24,6 @@ const BooksList = ({
       <table>
         <thead>
           <tr>
-            <th>ID</th>
             <th>Title</th>
             <th>Category</th>
             <th>Remove</th>
