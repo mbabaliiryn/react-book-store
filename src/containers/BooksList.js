@@ -6,7 +6,8 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook } from '../actions';
 
-const BooksList = ({ books, handleBookRemove }) => {
+const BooksList = ({ books, removeBook }) => {
+  const handleBookRemove = id => removeBook(id);
   return (
     <div>
       <table>
@@ -20,7 +21,7 @@ const BooksList = ({ books, handleBookRemove }) => {
         </thead>
         <tbody>
           {books.map(book => (
-            <Book key={book.id} book={book} handleBookRemove={removeBook} />
+            <Book key={book.id} book={book} handleBookRemove={handleBookRemove} />
           ))}
         </tbody>
       </table>
@@ -29,11 +30,11 @@ const BooksList = ({ books, handleBookRemove }) => {
 };
 
 BooksList.propTypes = {
-  books: PropTypes.shape([]).isRequired,
+  books: PropTypes.arrayOf(PropTypes.object).isRequired,
   removeBook: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
   books: state.books,
 });
-export default connect(mapStateToProps, {removeBook })(BooksList);
+export default connect(mapStateToProps, { removeBook })(BooksList);

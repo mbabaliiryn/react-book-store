@@ -62,6 +62,10 @@ class BooksForm extends React.Component {
           </div>
           <div className="form-group">
             <select name="category" value={category} onChange={this.handleChange} id="category">
+              <option value="">
+                select category
+              </option>
+
               { categories.map(category => (
                 <option key={category}>
                   { category }

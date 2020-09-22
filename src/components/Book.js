@@ -1,14 +1,8 @@
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = props => {
-
-  const { book, removeBook } = props;
-
-  const handleBookRemove = () => removeBook(book.id);
+  const { book, handleBookRemove } = props;
 
   return (
     <tr>
@@ -28,14 +22,19 @@ const Book = props => {
         {' '}
       </td>
       <td>
-        <button type="button" onClick={() => removeBook(book.id)}>x</button>
+        <button type="button" onClick={() => handleBookRemove(book.id)}>x</button>
       </td>
     </tr>
   );
 };
 
 Book.propTypes = {
-  book: PropTypes.shape({}).isRequired,
+  book: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+
+  }).isRequired,
   handleBookRemove: PropTypes.func.isRequired,
 };
 

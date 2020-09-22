@@ -9,7 +9,7 @@ const INITIAL_STATE = [
   {
     id: uuidv1(),
     title: 'Wheels on the Bus',
-    category: 'kids',
+    category: 'Kids',
   },
   {
     id: uuidv1(),
