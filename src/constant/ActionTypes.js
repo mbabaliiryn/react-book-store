@@ -1,0 +1,7 @@
+const ACTIONTYPES = {
+  GET_BOOK: 'GET_BOOK',
+  CREATE_BOOK: 'CREATE_BOOK',
+  REMOVE_BOOK: 'REMOVE_BOOK',
+};
+
+export default ACTIONTYPES;

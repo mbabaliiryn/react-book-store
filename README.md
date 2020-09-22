@@ -1,6 +1,6 @@
 # REACT-BOOK-STORE
 
-This is our react-book-store 
+This is our react-book-store
 
 ## BUILT WITH
 - ReactJS
@@ -17,10 +17,10 @@ This is our react-book-store
 
 ## Screenshots
 
-![Screenshot from 2020-09-21 12-07-39](https://user-images.githubusercontent.com/44978186/93749754-1f647480-fc03-11ea-8cf1-6de3403126e8.png)
+<img width="902" alt="Screenshot 2020-09-21 at 17 55 44" src="https://user-images.githubusercontent.com/25789009/93782885-c06b2380-fc33-11ea-806c-5d482dbc5515.png">
 
-## Get started 
-- clone the repository into your directory 
+## Get started
+- clone the repository into your directory
 - `cd` into your branch
 - Run `npm install` to install all the depencies
 - Run `npm start` to view the project from the browser
