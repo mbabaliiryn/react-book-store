@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { v1 as uuidv1 } from 'uuid';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
@@ -25,7 +25,7 @@ class BooksForm extends React.Component {
     const { title, category } = this.state;
     const { createBook } = this.props;
     const newBook = {
-      id: uuidv4(),
+      id: uuidv1(),
       title,
       category,
     };

@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ book }) => (
+const Book = ({ book, removeBook }) => (
   <tr>
     <td>
       {' '}
@@ -19,11 +19,15 @@ const Book = ({ book }) => (
       {book.category}
       {' '}
     </td>
+    <td>
+      <button type="button" onClick={() => removeBook(book.id)}>x</button>
+    </td>
   </tr>
 );
 
 Book.propTypes = {
   book: PropTypes.shape({}).isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
 export default Book;
