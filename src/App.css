@@ -37,24 +37,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* body {
-  margin: 0;
-  padding: 0;
-  background-color:  lightslategray;
-}
-
-tbody > tr {
-  border: 2px solid blue;
-  background-color: blue;
-  height: 20vh;
-  align-items: center;
-}
-
-table {
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-

@@ -43,7 +43,7 @@ BooksList.propTypes = {
   books: PropTypes.shape([]).isRequired,
   filter: PropTypes.string.isRequired,
   changeFilter: PropTypes.func.isRequired,
-  handleBookRemove: PropTypes.func.isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
