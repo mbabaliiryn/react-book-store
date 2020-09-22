@@ -17,7 +17,7 @@ This is our react-book-store
 
 ## Screenshots
 
-![Screenshot from 2020-09-22 11-21-24](https://user-images.githubusercontent.com/44978186/93859075-cdd0ee00-fcc5-11ea-896f-d5382598301b.png)
+<img width="902" alt="Screenshot 2020-09-22 at 13 04 30" src="https://user-images.githubusercontent.com/25789009/93869232-332bdb80-fcd4-11ea-8f49-d642c2fb200a.png">
 
 
 ## Get started
