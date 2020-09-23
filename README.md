@@ -27,7 +27,6 @@ This is our react-book-store
 - Run `npm start` to view the project from the browser
 
 
-
 ## Authors
 
 👤 Mbabali Iryn
@@ -61,3 +60,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is licensed under MIT license - see [LICENSE](/LICENSE) for more details.
+
