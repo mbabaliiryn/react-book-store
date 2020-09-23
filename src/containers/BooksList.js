@@ -1,4 +1,4 @@
-/* eslint-disable arrow-body-style */
+/* eslint-disable import/order */
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -7,9 +7,8 @@ import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
 import { handleBookRemove, changeFilter } from '../actions';
 import '../App.css';
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const BooksList = ({
   books, handleBookRemove, changeFilter, filter,
@@ -22,13 +21,13 @@ const BooksList = ({
   const filteredBooks = () => (filter === 'ALL' ? books : books.filter(book => book.category === filter));
 
   return (
-    <div className="main w-75 m-auto border bg-light shadow-lg">
+    <div className="main w-75 m-auto border bg-light shadow-lg h-100">
       <div className="main-container card border-bottom ">
         <div className="d-flex justify-content-between p-4 text-primary">
           <div className="title"> Bookstore</div>
           <CategoryFilter handleChange={handleFilterChange} />
           <div className="image-container">
-          <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon icon={faUser} />
           </div>
         </div>
       </div>

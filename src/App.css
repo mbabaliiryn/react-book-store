@@ -57,12 +57,20 @@ select {
   font-size: 2rem;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  background-color: #F5F6FA;
-} */
-
 .table-row {
   height: 20vh;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.enter-title {
+  font-size: 1.5rem;
+}
+
+.button {
+  border: none;
+  font-size: 1.2rem;
 }
