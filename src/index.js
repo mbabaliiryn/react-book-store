@@ -8,46 +8,14 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 
 import App from './components/App';
+import INITIAL_STATE from './constant/initialState';
 import rootReducer from './reducers';
 
-const initialState = {
-  books: [
-    {
-      id: Math.round(100 * Math.random()),
-      title: 'Shreds of Tenderness',
-      category: 'Learning',
-    },
-    {
-      id: Math.round(300 * Math.random()),
-      title: 'Wheels on the Bus',
-      category: 'kids',
-    },
-    {
-      id: Math.round(300 * Math.random()),
-      title: 'Expendables',
-      category: 'Action',
-    },
-    {
-      id: Math.round(400 * Math.random()),
-      title: 'Away and Apart',
-      category: 'Sci-fi',
-    },
-    {
-      id: Math.round(500 * Math.random()),
-      title: 'The Bye Bye Man',
-      category: 'Horror',
-    },
-    {
-      id: Math.round(500 * Math.random()),
-      title: 'My Life in Crime',
-      category: 'Biography',
-    },
-  ],
-};
+const STATE = { books: INITIAL_STATE };
 
 const middleware = [thunk];
 
-const store = createStore(rootReducer, initialState,
+const store = createStore(rootReducer, STATE,
   compose(applyMiddleware(...middleware),
     window.__REDUX_DEVTOOLS_EXTENSION__
               && window.__REDUX_DEVTOOLS_EXTENSION__()));
