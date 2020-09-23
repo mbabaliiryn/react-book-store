@@ -21,7 +21,7 @@ const BooksList = ({
   const filteredBooks = () => (filter === 'ALL' ? books : books.filter(book => book.category === filter));
 
   return (
-    <div className="main w-75 m-auto border bg-light shadow-lg h-100">
+    <div className="main w-75 m-auto border bg-light shadow-lg ">
       <div className="main-container card border-bottom ">
         <div className="d-flex justify-content-between p-4 text-primary">
           <div className="title"> Bookstore</div>

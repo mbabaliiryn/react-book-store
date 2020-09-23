@@ -49,7 +49,8 @@ class BooksForm extends React.Component {
   render() {
     const { title, category } = this.state;
     return (
-      <div className="card table-row rounded-0 w-75 ml-auto mr-auto mt-3 shadow-lg bg-white">
+      <div className="form  shadow-lg bg-white  ml-auto mr-auto mt-3 border bg-white shadow-lg">
+        <h1 className="add-book mt-4 ml-4">ADD NEW BOOK</h1>
         <form onSubmit={this.handleSubmit}>
           <div className="d-flex justify-content-between">
             <div className="form-group">
@@ -72,7 +73,7 @@ class BooksForm extends React.Component {
                 ))}
               </select>
             </div>
-            <input className="button mt-5 mr-5 bg-primary text-white h-25" type="submit" name="Add Book" value="Add Book" />
+            <input className="button mt-5 bg-primary text-white h-25" type="submit" name="Add Book" value="Add Book" />
           </div>
         </form>
       </div>

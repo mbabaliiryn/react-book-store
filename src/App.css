@@ -74,3 +74,13 @@ select {
   border: none;
   font-size: 1.2rem;
 }
+
+.add-book {
+  color: #7f8081;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form {
+  width: 56%;
+}
