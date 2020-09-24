@@ -5,8 +5,7 @@ import categories from '../constant/category';
 const CategoryFilter = ({ handleChange }) => (
   <div>
     <select name="category" onChange={handleChange}>
-      <option value="ALL">ALL</option>
-      { categories.map(category => (
+      { ['ALL', ...categories].map(category => (
         <option key={category} value={category}>
           { category }
         </option>
