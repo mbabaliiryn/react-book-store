@@ -66,13 +66,13 @@ class BooksForm extends React.Component {
             </div>
             <div className="">
 
-              <select className = "border mt-3 p-1" name="category" value={category} onChange={this.handleChange} id="category">
+              <select className="border mt-3 p-1" name="category" value={category} onChange={this.handleChange} id="category">
 
-              <option value="ALL">CATEGORIES</option>
-              { categories.map(category => (
-                <option key={category} value={category}>
-                  { category }
-                </option>
+                <option value="ALL">CATEGORIES</option>
+                { categories.map(category => (
+                  <option key={category} value={category}>
+                    { category }
+                  </option>
                 ))}
               </select>
             </div>
