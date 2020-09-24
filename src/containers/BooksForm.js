@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
 import categories from '../constant/category';
+import '../App.css';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -60,12 +61,11 @@ class BooksForm extends React.Component {
               placeholder="Enter title"
             />
           </div>
-          <div className="form-group">
+          <div className="header">
             <select name="category" value={category} onChange={this.handleChange} id="category">
               <option value="">
                 select category
               </option>
-
               { categories.map(category => (
                 <option key={category}>
                   { category }

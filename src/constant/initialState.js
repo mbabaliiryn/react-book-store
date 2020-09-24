@@ -19,12 +19,22 @@ const INITIAL_STATE = [
   {
     id: uuidv1(),
     title: 'Away and Apart',
-    category: 'Sci-fi',
+    category: 'Sci-Fi',
   },
   {
     id: uuidv1(),
     title: 'The Bye Bye Man',
     category: 'Horror',
+  },
+  {
+    id: uuidv1(),
+    title: 'Mau Mau Warriors ',
+    category: 'History',
+  },
+  {
+    id: uuidv1(),
+    title: 'My Life in Crime',
+    category: 'Biography',
   },
 ];
 
