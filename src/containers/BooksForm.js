@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
 import categories from '../constant/category';
-import '../App.css';
+import '../styles/BooksForm.css';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -64,7 +64,7 @@ class BooksForm extends React.Component {
                 className=" enter-title mt-5 ml-3"
               />
             </div>
-            <div className="header p-4">
+            <div className=" p-4">
               <select name="category" value={category} onChange={this.handleChange} id="category">
                 { categories.map(category => (
                   <option key={category}>

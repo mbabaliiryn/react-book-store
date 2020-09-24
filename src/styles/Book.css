@@ -1,0 +1,15 @@
+
+.table-row {
+  height: 20vh;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  }
+
+.button {
+  border: none;
+  font-size: 1.2rem;
+}
+  

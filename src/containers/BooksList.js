@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
 import { handleBookRemove, changeFilter } from '../actions';
-import '../App.css';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../styles/BooksList.css';
 
 const BooksList = ({
   books, handleBookRemove, changeFilter, filter,
