@@ -5,11 +5,18 @@
 
 .book-title {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   }
 
 .button {
   border: none;
   font-size: 1.2rem;
 }
-  
+
+.category-title {
+  margin-top: 20px;
+}
+
+.book-category {
+  color: #7f8081; 
+}

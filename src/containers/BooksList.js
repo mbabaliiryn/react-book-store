@@ -21,10 +21,11 @@ const BooksList = ({
   const filteredBooks = () => (filter === 'ALL' ? books : books.filter(book => book.category === filter));
 
   return (
-    <div className="main w-75 m-auto border bg-light shadow-lg ">
+    <div className="main w-75 m-auto border bg-light pb-5">
       <div className="main-container card border-bottom ">
         <div className="d-flex justify-content-between p-4 text-primary">
           <div className="title"> Bookstore</div>
+          <span className="mt-3 title-book">Book</span>
           <CategoryFilter handleChange={handleFilterChange} />
           <div className="image-container">
             <FontAwesomeIcon icon={faUser} />

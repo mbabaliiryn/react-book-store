@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
-// import '../styles/book.css';
+import '../styles/Book.css';
 
 const Book = ({ book, handleBookRemove }) => (
 
-  <tr className=" card table-row rounded-0 w-75 ml-auto mr-auto mt-3 shadow-lg bg-white">
+  <tr className=" card table-row rounded-0 w-75 ml-auto mr-auto mt-3 shadow bg-white">
     <div className="d-flex justify-content-between">
       <div className="d-flex flex-column p-5">
-        <td>
+        <td className="book-category">
           {' '}
           {book.category}
           {' '}
@@ -19,9 +19,9 @@ const Book = ({ book, handleBookRemove }) => (
           {' '}
         </td>
       </div>
-      <div className="">
+      <div>
         <td>
-          <button className=" button mt-5 mr-5 bg-primary text-white" type="button" onClick={() => handleBookRemove(book.id)}>Delete book</button>
+          <button className=" button mt-5 mr-5 bg-danger text-white" type="button" onClick={() => handleBookRemove(book.id)}>Delete book</button>
         </td>
       </div>
     </div>
