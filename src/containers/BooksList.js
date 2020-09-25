@@ -57,4 +57,3 @@ const mapStateToProps = state => ({
   filter: state.filter,
 });
 export default connect(mapStateToProps, { handleBookRemove, changeFilter })(BooksList);
-
