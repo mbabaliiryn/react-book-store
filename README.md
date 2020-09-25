@@ -19,7 +19,6 @@ This is our react-book-store
 
 ![Screenshot from 2020-09-25 10-44-27](https://user-images.githubusercontent.com/44978186/94242561-e0922f80-ff1e-11ea-955e-14f7dad551ae.png)
 
-
 ## Get started
 - clone the repository into your directory
 - `cd` into your branch
