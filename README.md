@@ -17,7 +17,7 @@ This is our react-book-store
 
 ## Screenshots
 
-![Screenshot from 2020-09-23 14-29-07](https://user-images.githubusercontent.com/44978186/94006922-3fce3380-fda9-11ea-98c2-9b3faa3c8b23.png)
+<img width="1440" alt="Screenshot 2020-09-28 at 12 23 44" src="https://user-images.githubusercontent.com/25789009/94415516-4c2a0600-0186-11eb-93e8-470bc590e32a.png">
 
 ## Get started
 - clone the repository into your directory
