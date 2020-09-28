@@ -26,7 +26,7 @@
 
 .li-item {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .current-chapter-one {
@@ -49,11 +49,10 @@
 }
 
 .progress-10 {
-  background-image: linear-gradient(54deg,#ddd 50%,transparent 0),linear-gradient(90deg,#028cd5 50%,#ddd 0);
+  background-image: linear-gradient(54deg, #ddd 50%, transparent 0), linear-gradient(90deg, #028cd5 50%, #ddd 0);
 }
 
-.radial-progress-bar
-.overlay {
+.radial-progress-bar .overlay {
   box-sizing: border-box;
   border-radius: 50%;
   width: 80px;
