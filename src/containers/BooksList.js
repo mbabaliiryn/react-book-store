@@ -27,7 +27,7 @@ const BooksList = ({
           <div className="title"> Bookstore</div>
           <span className="mt-3 title-book">Book</span>
           <CategoryFilter handleChange={handleFilterChange} />
-          <div className="image-container">
+          <div className="image-container-1">
             <FontAwesomeIcon icon={faUser} />
           </div>
         </div>
