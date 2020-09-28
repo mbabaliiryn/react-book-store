@@ -49,7 +49,7 @@ class BooksForm extends React.Component {
   render() {
     const { title, category } = this.state;
     return (
-      <div className="form w-75 ml-auto border mr-auto pb-5 bg-light">
+      <div className="form ml-auto w-75 border mr-auto pb-5 bg-light">
         <h1 className="add-book mt-1 pt-5 ml-4">ADD NEW BOOK</h1>
         <form onSubmit={this.handleSubmit}>
           <div className="d-flex justify-content-between">
@@ -60,15 +60,15 @@ class BooksForm extends React.Component {
                 onChange={this.handleChange}
                 value={title}
                 name="title"
-                placeholder="Enter title"
+                placeholder="Book title"
                 className=" enter-title mt-3 ml-3"
               />
             </div>
             <div className="">
 
-              <select className="border mt-3 p-1" name="category" value={category} onChange={this.handleChange} id="category">
+              <select className="border mt-3 category-bottom p-1" name="category" value={category} onChange={this.handleChange} id="category">
 
-                <option value="ALL">CATEGORIES</option>
+                <option value="ALL">CATEGORY</option>
                 { categories.map(category => (
                   <option key={category} value={category}>
                     { category }
